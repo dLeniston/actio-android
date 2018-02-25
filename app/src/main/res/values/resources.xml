@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tracking_options">
+        <item>Running</item>
+        <item>Cycling</item>
+        <item>Walking</item>
+        <item>Hiking</item>
+    </string-array>
+</resources>
