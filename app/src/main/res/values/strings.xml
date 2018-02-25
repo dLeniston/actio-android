@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Actio</string>
     <string name="splash">Splash Screen</string>
+    <string name="mainTextViewLogin">Login</string>
+    <string name="mainTextViewUsername">Username</string>
+    <string name="mainTextViewPassword">Password</string>
+    <string name="mainTextViewSubmit">Submit</string>
+    <string name="selectScreenUsernameText">Welcome (Username)!</string>
+    <string name="selectScreenActivityButtonText">Activity Tracker</string>
+    <string name="selectScreenEventButtonText">Your Events</string>
 </resources>
