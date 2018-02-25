@@ -8,4 +8,7 @@
     <string name="selectScreenUsernameText">Welcome (Username)!</string>
     <string name="selectScreenActivityButtonText">Activity Tracker</string>
     <string name="selectScreenEventButtonText">Your Events</string>
+    <string name="eventListHeader">Your Events</string>
+    <string name="trackingMenuText">Activity Tracker</string>
+    <string name="trackingMenuButtonText">Start!</string>
 </resources>
