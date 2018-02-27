@@ -1,0 +1,19 @@
+{
+  "title": "TestEventData",
+  "events": [{
+    "id": 1,
+    "event": "5KM Run",
+    "location": "Dunmore, Waterford"
+  },
+    {
+      "id": 2,
+      "event": "40KM Charity Cycle",
+      "location": "Waterford Greenway, Waterford"
+    },
+    {
+      "id": 3,
+      "event": "Friend Group Hike!!",
+      "location": "Wicklow Mountains, Wicklow"
+    }
+  ]
+}

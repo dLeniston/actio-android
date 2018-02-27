@@ -11,4 +11,6 @@
     <string name="eventListHeader">Your Events</string>
     <string name="trackingMenuText">Activity Tracker</string>
     <string name="trackingMenuButtonText">Start!</string>
+    <string name="mapScreenTitle">Event Map</string>
+
 </resources>
