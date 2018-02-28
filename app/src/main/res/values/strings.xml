@@ -13,4 +13,6 @@
     <string name="trackingMenuButtonText">Start!</string>
     <string name="mapScreenTitle">Event Map</string>
 
+    <string name="google_map_api_key">AIzaSyD5chaW0pfWkKsOkUapuLZ8enfLAgaONJk</string>
+
 </resources>

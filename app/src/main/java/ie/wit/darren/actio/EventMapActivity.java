@@ -10,7 +10,7 @@ import android.widget.Button;
  * Created by Dazza on 27/02/2018.
  */
 
-public class EventMap extends AppCompatActivity{
+public class EventMapActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

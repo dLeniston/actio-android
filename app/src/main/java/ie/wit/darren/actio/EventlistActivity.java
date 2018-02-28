@@ -68,7 +68,7 @@ public class EventlistActivity extends AppCompatActivity {
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                             String itemChosen = (String) parent.getItemAtPosition(position);
-                            Intent intent = new Intent(EventlistActivity.this, TrackingActivity.class);
+                            Intent intent = new Intent(EventlistActivity.this, EventMapActivity.class);
                             intent.putExtra("event", itemChosen);
                             startActivity(intent);
                         }
