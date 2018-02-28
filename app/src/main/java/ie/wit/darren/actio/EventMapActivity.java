@@ -1,100 +1,162 @@
 package ie.wit.darren.actio;
 
-import android.content.Context;
-import android.content.Intent;
+import android.*;
+import android.Manifest;
 import android.content.pm.PackageManager;
 import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
+import android.util.Log;
+import android.widget.Toast;
 
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 
 /**
  * Created by Dazza on 27/02/2018.
  */
 
-public class EventMapActivity extends AppCompatActivity implements OnMapReadyCallback, LocationListener {
-    GoogleMap map;
-    LocationManager locationManager;
+public class EventMapActivity extends AppCompatActivity implements OnMapReadyCallback{
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.map_screen);
+    private static final String TAG = "EventMap";
 
-        MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.event_map);
+    private static final String FINE_LOCATION = android.Manifest.permission.ACCESS_FINE_LOCATION;
+    private static final String COURSE_LOCATION = android.Manifest.permission.ACCESS_COARSE_LOCATION;
+    private static final int LOCATION_PERMISSION_REQUEST_CODE = 1234;
+    private static final float DEFAULT_ZOOM = 15f;
 
-        mapFragment.getMapAsync(this);
-
-        //  map.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
-
-        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-
-        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return;
-        }
-        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 1, 1, this);
-    }
+    //vars
+    private Boolean mLocationPermissionsGranted = false;
+    private GoogleMap map;
+    private FusedLocationProviderClient mFusedLocationProviderClient;
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
+        Toast.makeText(this, "Map is Ready", Toast.LENGTH_SHORT).show();
+        Log.d(TAG, "onMapReady: map is ready");
         map = googleMap;
 
+        if (mLocationPermissionsGranted) {
+            getDeviceLocation();
 
-        // map.setMyLocationEnabled(true);
+            if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION)
+                    != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
+                    android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                return;
+            }
+            map.setMyLocationEnabled(true);
+            map.getUiSettings().setMyLocationButtonEnabled(false);
 
-
+        }
     }
 
     @Override
-    public void onLocationChanged(Location location) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.map_screen);
 
-        map.clear();
-        LatLng currentLocation = new LatLng(location.getLatitude(), location.getLongitude());
+        getLocationPermission();
+    }
 
+    private void getDeviceLocation(){
+        Log.d(TAG, "getDeviceLocation: getting the devices current location");
 
-        MarkerOptions markerOptions = new MarkerOptions();
-        markerOptions.position(currentLocation);
-        markerOptions.title("i'm here");
+        mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
 
-        map.addMarker(markerOptions);
+        try{
+            if(mLocationPermissionsGranted){
 
-        // map.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 17.0f));
+                final Task location = mFusedLocationProviderClient.getLastLocation();
+                location.addOnCompleteListener(new OnCompleteListener() {
+                    @Override
+                    public void onComplete(@NonNull Task task) {
+                        if(task.isSuccessful()){
+                            Log.d(TAG, "onComplete: found location!");
+                            Location currentLocation = (Location) task.getResult();
 
-        map.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 17.0f));
+                            moveCamera(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()),
+                                    DEFAULT_ZOOM);
+
+                        }else{
+                            Log.d(TAG, "onComplete: current location is null");
+                            Toast.makeText(EventMapActivity.this, "unable to get current location", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+            }
+        }catch (SecurityException e){
+            Log.e(TAG, "getDeviceLocation: SecurityException: " + e.getMessage() );
+        }
+    }
+
+    private void moveCamera(LatLng latLng, float zoom){
+        Log.d(TAG, "moveCamera: moving the camera to: lat: " + latLng.latitude + ", lng: " + latLng.longitude );
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoom));
+    }
+
+    private void initMap(){
+        Log.d(TAG, "initMap: initializing map");
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.event_map);
+
+        mapFragment.getMapAsync(EventMapActivity.this);
+    }
+
+    private void getLocationPermission(){
+        Log.d(TAG, "getLocationPermission: getting location permissions");
+        String[] permissions = {android.Manifest.permission.ACCESS_FINE_LOCATION,
+                android.Manifest.permission.ACCESS_COARSE_LOCATION};
+
+        if(ContextCompat.checkSelfPermission(this.getApplicationContext(),
+                FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
+            if(ContextCompat.checkSelfPermission(this.getApplicationContext(),
+                    COURSE_LOCATION) == PackageManager.PERMISSION_GRANTED){
+                mLocationPermissionsGranted = true;
+                initMap();
+            }else{
+                ActivityCompat.requestPermissions(this,
+                        permissions,
+                        LOCATION_PERMISSION_REQUEST_CODE);
+            }
+        }else{
+            ActivityCompat.requestPermissions(this,
+                    permissions,
+                    LOCATION_PERMISSION_REQUEST_CODE);
+        }
     }
 
     @Override
-    public void onStatusChanged(String provider, int status, Bundle extras) {
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        Log.d(TAG, "onRequestPermissionsResult: called.");
+        mLocationPermissionsGranted = false;
 
-    }
-
-    @Override
-    public void onProviderEnabled(String provider) {
-
-    }
-
-    @Override
-    public void onProviderDisabled(String provider) {
-
+        switch(requestCode){
+            case LOCATION_PERMISSION_REQUEST_CODE:{
+                if(grantResults.length > 0){
+                    for(int i = 0; i < grantResults.length; i++){
+                        if(grantResults[i] != PackageManager.PERMISSION_GRANTED){
+                            mLocationPermissionsGranted = false;
+                            Log.d(TAG, "onRequestPermissionsResult: permission failed");
+                            return;
+                        }
+                    }
+                    Log.d(TAG, "onRequestPermissionsResult: permission granted");
+                    mLocationPermissionsGranted = true;
+                    //initialize our map
+                    initMap();
+                }
+            }
+        }
     }
 }
+
