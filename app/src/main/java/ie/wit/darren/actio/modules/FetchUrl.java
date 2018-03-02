@@ -3,8 +3,6 @@ package ie.wit.darren.actio.modules;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.google.android.gms.maps.GoogleMap;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
