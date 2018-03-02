@@ -3,17 +3,23 @@
   "events": [{
     "id": 1,
     "event": "5KM Run",
-    "location": "Dunmore, Waterford"
+    "location": "Dunmore, Waterford",
+    "lat": 52.238787,
+    "lng": -7.064313
   },
     {
       "id": 2,
       "event": "40KM Charity Cycle",
-      "location": "Waterford Greenway, Waterford"
+      "location": "Waterford Greenway, Waterford",
+      "lat": 52.270196,
+      "lng": -7.137998
     },
     {
       "id": 3,
       "event": "Friend Group Hike!!",
-      "location": "Wicklow Mountains, Wicklow"
+      "location": "Wicklow Mountains, Wicklow",
+      "lat": 53.008504,
+      "lng": -6.297676
     }
   ]
 }

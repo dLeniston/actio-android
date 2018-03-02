@@ -74,7 +74,9 @@ public class EventlistActivity extends AppCompatActivity {
                     JSONObject object = array.getJSONObject(i);
                     String event = object.getString("event");
                     String loc = object.getString("location");
-                    String full = event + '\n' + loc;
+                    String lat = object.getString("lat");
+                    String lng = object.getString("lng");
+                    String full = event + '\n' + loc + '\n' + lat + '\n' + lng;
                     items.add(full);
                 }
                 ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
