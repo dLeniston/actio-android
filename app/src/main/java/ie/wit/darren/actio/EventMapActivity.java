@@ -46,7 +46,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Arrays;
 
-import ie.wit.darren.actio.modules.DataParser;
+import ie.wit.darren.actio.modules.FetchUrl;
+import ie.wit.darren.actio.modules.ParserTask;
 
 /**
  * Created by Dazza on 27/02/2018.
@@ -65,11 +66,9 @@ public class EventMapActivity extends AppCompatActivity implements OnMapReadyCal
 
     //vars
     private Boolean mLocationPermissionsGranted = false;
-    private GoogleMap map;
+    public static GoogleMap map;
     private FusedLocationProviderClient mFusedLocationProviderClient;
 
-    //double lat = 52.270200;//set these to intent values from eventlistactivity
-    //double lng = -7.138008;//set these to intent values from eventlistactivity
     double lat = 0.0;
     double lng = 0.0;
     ArrayList<LatLng> MarkerPoints;
@@ -300,7 +299,7 @@ public class EventMapActivity extends AppCompatActivity implements OnMapReadyCal
     /**
      * A method to download json data from url
      */
-    private String downloadUrl(String strUrl) throws IOException {
+    /*private String downloadUrl(String strUrl) throws IOException {
         String data = "";
         InputStream iStream = null;
         HttpURLConnection urlConnection = null;
@@ -336,10 +335,10 @@ public class EventMapActivity extends AppCompatActivity implements OnMapReadyCal
             urlConnection.disconnect();
         }
         return data;
-    }
+    }*/
 
     // Fetches data from url passed
-    private class FetchUrl extends AsyncTask<String, Void, String> {
+    /*private class FetchUrl extends AsyncTask<String, Void, String> {
 
         @Override
         protected String doInBackground(String... url) {
@@ -367,10 +366,10 @@ public class EventMapActivity extends AppCompatActivity implements OnMapReadyCal
             parserTask.execute(result);
 
         }
-    }
+    }*/
 
 
-    private class ParserTask extends AsyncTask<String, Integer, List<List<HashMap<String, String>>>> {
+    /*private class ParserTask extends AsyncTask<String, Integer, List<List<HashMap<String, String>>>> {
 
         // Parsing the data in non-ui thread
         @Override
@@ -439,7 +438,7 @@ public class EventMapActivity extends AppCompatActivity implements OnMapReadyCal
                 Log.d("onPostExecute","without Polylines drawn");
             }
         }
-    }
+    }*/
 
     protected synchronized void buildGoogleApiClient() {
         mGoogleApiClient = new GoogleApiClient.Builder(this)
