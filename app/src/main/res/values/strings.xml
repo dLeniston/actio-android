@@ -5,6 +5,7 @@
     <string name="mainTextViewUsername">Username</string>
     <string name="mainTextViewPassword">Password</string>
     <string name="mainTextViewSubmit">Submit</string>
+    <string name="mainTextViewRegister">Don\'t have an account? Register here!</string>
     <string name="selectScreenUsernameText">Welcome (Username)!</string>
     <string name="selectScreenActivityButtonText">Activity Tracker</string>
     <string name="selectScreenEventButtonText">Your Events</string>

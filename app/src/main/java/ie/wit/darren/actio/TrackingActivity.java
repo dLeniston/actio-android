@@ -15,6 +15,7 @@ public class TrackingActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tracking_screen);
+        getSupportActionBar().setTitle("Tracking");
 
         trackingMenuSpinner = (Spinner) findViewById(R.id.trackingMenuSpinner);
 
