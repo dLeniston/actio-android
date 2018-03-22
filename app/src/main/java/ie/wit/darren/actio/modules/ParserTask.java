@@ -1,8 +1,10 @@
 package ie.wit.darren.actio.modules;
 
+import android.content.Context;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.util.Log;
+
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.PolylineOptions;
 
@@ -19,7 +21,7 @@ import ie.wit.darren.actio.EventMapActivity;
  */
 
 public class ParserTask extends AsyncTask<String, Integer, List<List<HashMap<String, String>>>> {
-
+    public Context context;
     // Parsing the data in non-ui thread
     protected List<List<HashMap<String, String>>> doInBackground(String... jsonData) {
 
@@ -50,6 +52,10 @@ public class ParserTask extends AsyncTask<String, Integer, List<List<HashMap<Str
         PolylineOptions lineOptions = null;
 
         // Traversing through all the routes
+        if(result == null){
+            return;
+        }
+
         for (int i = 0; i < result.size(); i++) {
             points = new ArrayList<>();
             lineOptions = new PolylineOptions();

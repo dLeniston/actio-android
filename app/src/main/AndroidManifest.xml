@@ -12,6 +12,7 @@
         android:protectionLevel="signature" />
 
     <uses-permission android:name="ie.wit.darren.actio.permission.MAPS_RECEIVE" />
+    <uses-feature android:name="android.hardware.location.gps" />
 
     <application
         android:allowBackup="true"
@@ -19,7 +20,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,11 +35,11 @@
         <activity
             android:name=".SelectActivity"
         />
-        <activity android:name=".TrackingActivity"
-        />
-        <activity android:name=".EventlistActivity"
+        <activity android:name=".TrackerActivity"
         />
         <activity android:name=".EventMapActivity"
+            />
+        <activity android:name=".TrackingCompleteActivity"
             />
 
         <meta-data
@@ -46,7 +47,7 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR KEY HERE" />
+            android:value="Key here" />
     </application>
 
 </manifest>

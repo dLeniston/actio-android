@@ -2,14 +2,15 @@ package ie.wit.darren.actio;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -24,20 +25,29 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import ie.wit.darren.actio.modules.Event;
+import ie.wit.darren.actio.modules.EventAdapter;
+
+
 /**
  * Created by Dazza on 25/02/2018.
  */
 
-public class EventlistActivity extends AppCompatActivity {
+public class EventlistActivity extends Fragment implements View.OnClickListener{
 
     private static final String TAG = "MainActivity";
 
     private static final int ERROR_DIALOG_REQUEST = 9001;
 
+    private List<Event> eventList = new ArrayList<>();
+    private RecyclerView recyclerView;
+    private EventAdapter mAdapter;
+    private Context context;
+
     public String loadJSONFromAsset() {
         String json = null;
         try {
-            InputStream is = getAssets().open("data.json");
+            InputStream is = getActivity().getAssets().open("data.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
@@ -51,72 +61,69 @@ public class EventlistActivity extends AppCompatActivity {
     }
 
 
-        @Override
-        protected void onCreate (Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.eventlist_screen);
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-            if (isServicesOK()) {
-                init();
-            }
-        }
+        View v = inflater.inflate(R.layout.eventlist_screen, null);
 
+        recyclerView = (RecyclerView) v.findViewById(R.id.recycler_view);
 
-            public void init(){
-            try {
-                ListView eventList = (ListView) findViewById(R.id.event_list);
-                List<String> items = new ArrayList<>();
-                Context context = null;
-                JSONObject obj = new JSONObject(loadJSONFromAsset());
-                JSONArray array = obj.getJSONArray("events");
-                this.setTitle(obj.getString("title"));
-                for (int i = 0; i < array.length(); i++) {
-                    JSONObject object = array.getJSONObject(i);
-                    String event = object.getString("event");
-                    String loc = object.getString("location");
-                    String lat = object.getString("lat");
-                    String lng = object.getString("lng");
-                    String full = event + '\n' + loc + '\n' + lat + '\n' + lng;
-                    items.add(full);
-                }
-                ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
-                if (eventList != null) {
-                    eventList.setAdapter(adapter);
+        mAdapter = new EventAdapter(this, eventList);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
+        recyclerView.setLayoutManager(mLayoutManager);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setAdapter(mAdapter);
 
-                    eventList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                        @Override
-                        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                            String itemChosen = (String) parent.getItemAtPosition(position);
-                            Intent intent = new Intent(EventlistActivity.this, EventMapActivity.class);
-                            intent.putExtra("event", itemChosen);
-                            startActivity(intent);
-                        }
-                    });
-                }
-            }catch (JSONException e) {
-                e.printStackTrace();
-            }
+        prepareEventData();
+        return v;
     }
 
-            public boolean isServicesOK(){
-                Log.d(TAG, "isServicesOK: checking google services version");
+    public void onClick(View v) {
+    }
 
-                int available = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(EventlistActivity.this);
 
-                if(available == ConnectionResult.SUCCESS){
-                    //everything is fine and the user can make map requests
-                    Log.d(TAG, "isServicesOK: Google Play Services is working");
-                    return true;
-                }
-                else if(GoogleApiAvailability.getInstance().isUserResolvableError(available)){
-                    //an error occured but we can resolve it
-                    Log.d(TAG, "isServicesOK: an error occured but we can fix it");
-                    Dialog dialog = GoogleApiAvailability.getInstance().getErrorDialog(EventlistActivity.this, available, ERROR_DIALOG_REQUEST);
-                    dialog.show();
-                }else{
-                    Toast.makeText(this, "You can't make map requests", Toast.LENGTH_SHORT).show();
-                }
-                return false;
+    private void prepareEventData() {
+        Event event;
+        try {
+            JSONObject obj = new JSONObject(loadJSONFromAsset());
+            JSONArray array = obj.getJSONArray("events");
+            for (int i = 0; i < array.length(); i++) {
+                JSONObject object = array.getJSONObject(i);
+                String name = object.getString("event");
+                String loc = object.getString("location");
+                String lat = object.getString("lat");
+                String lng = object.getString("lng");
+
+                event = new Event(name, loc, lat, lng);
+                eventList.add(event);
             }
-
+        }catch (JSONException e) {
+            e.printStackTrace();
         }
+
+        mAdapter.notifyDataSetChanged();
+    }
+
+    public boolean isServicesOK(){
+        Log.d(TAG, "isServicesOK: checking google services version");
+
+        int available = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(this.getActivity());
+
+        if(available == ConnectionResult.SUCCESS){
+            //everything is fine and the user can make map requests
+            Log.d(TAG, "isServicesOK: Google Play Services is working");
+            return true;
+        }
+        else if(GoogleApiAvailability.getInstance().isUserResolvableError(available)){
+            //an error occured but we can resolve it
+            Log.d(TAG, "isServicesOK: an error occured but we can fix it");
+            Dialog dialog = GoogleApiAvailability.getInstance().getErrorDialog(this.getActivity(), available, ERROR_DIALOG_REQUEST);
+            dialog.show();
+        }else{
+            Toast.makeText(this.getActivity(), "You can't make map requests", Toast.LENGTH_SHORT).show();
+        }
+        return false;
+    }
+    }
+

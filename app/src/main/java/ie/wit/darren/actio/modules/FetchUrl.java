@@ -1,7 +1,9 @@
 package ie.wit.darren.actio.modules;
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,6 +19,10 @@ import java.net.URL;
 
 public class FetchUrl extends AsyncTask<String, Void, String> {
 
+    private Context context;
+
+    public FetchUrl(Context context) { this.context = context; }
+
     protected String doInBackground(String... url) {
 
         // For storing data from web service
@@ -28,6 +34,7 @@ public class FetchUrl extends AsyncTask<String, Void, String> {
             Log.d("Background Task data", data.toString());
         } catch (Exception e) {
             Log.d("Background Task", e.toString());
+            return "Exception Caught";
         }
         return data;
     }
@@ -38,8 +45,12 @@ public class FetchUrl extends AsyncTask<String, Void, String> {
         ParserTask parserTask = new ParserTask();
 
         // Invokes the thread for parsing the JSON data
-        parserTask.execute(result);
 
+        if(result.equalsIgnoreCase("Exception Caught")){
+            Toast.makeText(context, "Routes not currently available, please check your data connection and try again", Toast.LENGTH_SHORT).show();
+        }else{
+            parserTask.execute(result);
+        }
     }
 
     private String downloadUrl(String strUrl) throws IOException {
