@@ -77,7 +77,7 @@ public class ParserTask extends AsyncTask<String, Integer, List<List<HashMap<Str
             // Adding all the points in the route to LineOptions
             lineOptions.addAll(points);
             lineOptions.width(10);
-            lineOptions.color(Color.BLUE);
+            lineOptions.color(Color.RED);
 
             Log.d("onPostExecute","onPostExecute lineoptions decoded");
 
@@ -85,7 +85,7 @@ public class ParserTask extends AsyncTask<String, Integer, List<List<HashMap<Str
 
         // Drawing polyline in the Google Map for the i-th route
         if(lineOptions != null) {
-            EventMapActivity.map.addPolyline(lineOptions);
+            EventMapActivity.eventMap.addPolyline(lineOptions);
         }
         else {
             Log.d("onPostExecute","without Polylines drawn");

@@ -3,12 +3,10 @@ package ie.wit.darren.actio.modules;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.List;
 
@@ -25,15 +23,17 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.MyViewHolder
     public Context context;
 
     public static class  MyViewHolder extends RecyclerView.ViewHolder{
-        public TextView event, address; //date etc..
+        public TextView event, address, date, time;
         public Context context;
 
         public MyViewHolder(View view, Context context) {
             super(view);
             event = (TextView) view.findViewById(R.id.event);
             address = (TextView) view.findViewById(R.id.address);
+            date = (TextView) view.findViewById(R.id.event_date);
+            time = (TextView) view.findViewById(R.id.event_time);
+
             this.context = context;
-            //year = (TextView) view.findViewById(R.id.year);
             view.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v) {
@@ -73,7 +73,8 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.MyViewHolder
         Event event = eventList.get(position);
         holder.event.setText(event.getEvent());
         holder.address.setText(event.getAddress());
-        //holder.year.setText(movie.getYear());
+        holder.date.setText(event.getDate());
+        holder.time.setText(event.getTime());
     }
 
     @Override

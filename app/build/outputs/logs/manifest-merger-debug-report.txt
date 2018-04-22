@@ -1,70 +1,77 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:2:1-53:12
-MERGED from [com.android.support:design:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\d804c2188ca0cec510b3bfcdc2f85aa8\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e1262fbfee32df37fda7aff955daf814\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\7d26b74898d178e4d91e0a2ec7fc7948\AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\297377349e5dcd631598530b14a8e073\AndroidManifest.xml:17:1-32:12
-MERGED from [com.google.android.gms:play-services-location:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\1e4fab334f8f61b2bad02a2b4527839f\AndroidManifest.xml:2:1-9:12
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\a55de245b7a9a5a833c00691e95fe263\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ccf68d3a10c6a1b954fff1c8843a1981\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\d9557f367c9115aa9a6ab8942e03f2b8\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:transition:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\c9453bccd708eebd03022d78a06de269\AndroidManifest.xml:17:1-28:12
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\7f40b6ed9b56348649f7da7388489ea7\AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\213cd42ce002ab361818f969f45d0c3f\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\8fb5b0a9d8291115f1ce430aa9ea7205\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\b8ce68619ce5c608257ee63c6eb380d1\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\755d6125f4f93df81eec2bce61ec06c9\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\d54b76b88913e93e71d44e7c3421d090\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\0c3846403654499aaf8ff5060df62585\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9ea4529c53ffc0a58096c29996c9e47\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\92c880fbc218b55cd979e16728918993\AndroidManifest.xml:17:1-31:12
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\3a4c08c53591ba9497d7eeb6691f03f1\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-location-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\d09e93c4b378d0b5e691de5696e6bf91\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\7d761b971377e2931a9e615ba05a048f\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\36f44c4160bb2bf95d3b29c2e76569a8\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\25528a9f97928e88258c03e5ce0c840a\AndroidManifest.xml:2:1-6:12
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1849a53dd9ff9c6fc519cef160024143\AndroidManifest.xml:17:1-30:12
-INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:2:1-53:12
+ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:2:1-55:12
+MERGED from [com.android.support:design:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\a16c47d4b05c47a45ea67b0c7909308a\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\301018d77a4ff9cbb99fc18317fb6b94\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\5ba6b4e02413e15444622256232dd345\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\0bba2f9536bead15a9f6deae66328db7\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\8fb1dcb4e9cfe9b79c815f639d9453e4\AndroidManifest.xml:17:1-39:12
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\6a3138a3f7d5de32d721353b21c0366b\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3834151a1a34a2bae257e7aff746a6c7\AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-location:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\cc3bb12cab08abb5f316e4cda7e9fb29\AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\f0fca987097615e52addbcb30fb54517\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\34ee57de5e9324c30048e6078cfcca5c\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\b943d525686d13f471424d9cd23f0532\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\bf185d671a6882aa782a8ac84fbc8ddf\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\2f83f3e5d93ec7db873439b14dffd6da\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.8.0.aar\175ae46282c965ef1dd3521ca4e9cef3\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\cb7861db7ea4dc1c878964f618030200\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\780c031eec88679d25c0ee35b55f45c4\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\8ae1161ce36df4652a79f1991cc8e1f7\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\c8bc1bd9b0ebbfd3378a90ca635bf2d5\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\134718ecbc8faae2a83acbca917afef6\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\0e87d4030ca38d3cb96aafee2a109097\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\5937a33bae2a33217d375510b911e36a\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\f5ab2997bc547a6e43f1dc8d7d4417d0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\0e7419dfccc7f8d4ba9e43275e93a76b\AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\61a476151911850972567aaa3c96a4ff\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\c133cb26c097ee453ffc73e8e5432c36\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\2df1057cbf55fcc3e4323e0d461d884b\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\af69a92e875ed0e139f04bebe9e3fe24\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\caab84e98c204e48806622b41628f10b\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\22a75157b5dfec605ca99784e9928a07\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\034bb67a1bffb746f4f4a9a6315815ff\AndroidManifest.xml:2:1-6:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d34043f5ae629e0625940bf964d73b8b\AndroidManifest.xml:17:1-30:12
+INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:2:1-55:12
 	package
 		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:3:5-34
 		INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:2:1-53:12
+		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:2:1-55:12
 		INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:2:1-53:12
+		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:2:1-55:12
 		INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
 ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:5:5-66
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\297377349e5dcd631598530b14a8e073\AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\297377349e5dcd631598530b14a8e073\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3834151a1a34a2bae257e7aff746a6c7\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3834151a1a34a2bae257e7aff746a6c7\AndroidManifest.xml:24:5-67
 	android:name
 		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:5:22-64
-uses-permission#android.permission.ACCESS_FINE_LOCATION
+uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:6:5-78
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3834151a1a34a2bae257e7aff746a6c7\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3834151a1a34a2bae257e7aff746a6c7\AndroidManifest.xml:23:5-79
 	android:name
 		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:6:22-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:7:5-78
+	android:name
+		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:7:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:7:5-80
+ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:8:5-80
 	android:name
-		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:7:22-78
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:8:5-78
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\297377349e5dcd631598530b14a8e073\AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\297377349e5dcd631598530b14a8e073\AndroidManifest.xml:23:5-79
-	android:name
-		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:8:22-76
+		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:8:22-78
 permission#ie.wit.darren.actio.permission.MAPS_RECEIVE
 ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:10:5-12:47
 	android:protectionLevel
@@ -80,55 +87,65 @@ ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManife
 	android:name
 		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:15:19-63
 application
-ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:17:5-51:19
-MERGED from [com.android.support:design:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\d804c2188ca0cec510b3bfcdc2f85aa8\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:design:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\d804c2188ca0cec510b3bfcdc2f85aa8\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e1262fbfee32df37fda7aff955daf814\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e1262fbfee32df37fda7aff955daf814\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\7d26b74898d178e4d91e0a2ec7fc7948\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\7d26b74898d178e4d91e0a2ec7fc7948\AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\297377349e5dcd631598530b14a8e073\AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\297377349e5dcd631598530b14a8e073\AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-location:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\1e4fab334f8f61b2bad02a2b4527839f\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\1e4fab334f8f61b2bad02a2b4527839f\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\a55de245b7a9a5a833c00691e95fe263\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\a55de245b7a9a5a833c00691e95fe263\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ccf68d3a10c6a1b954fff1c8843a1981\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ccf68d3a10c6a1b954fff1c8843a1981\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\d9557f367c9115aa9a6ab8942e03f2b8\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\d9557f367c9115aa9a6ab8942e03f2b8\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:transition:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\c9453bccd708eebd03022d78a06de269\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:transition:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\c9453bccd708eebd03022d78a06de269\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\7f40b6ed9b56348649f7da7388489ea7\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\7f40b6ed9b56348649f7da7388489ea7\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\213cd42ce002ab361818f969f45d0c3f\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\213cd42ce002ab361818f969f45d0c3f\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\8fb5b0a9d8291115f1ce430aa9ea7205\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\8fb5b0a9d8291115f1ce430aa9ea7205\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\b8ce68619ce5c608257ee63c6eb380d1\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\b8ce68619ce5c608257ee63c6eb380d1\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\755d6125f4f93df81eec2bce61ec06c9\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\755d6125f4f93df81eec2bce61ec06c9\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\d54b76b88913e93e71d44e7c3421d090\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\d54b76b88913e93e71d44e7c3421d090\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\0c3846403654499aaf8ff5060df62585\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\0c3846403654499aaf8ff5060df62585\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9ea4529c53ffc0a58096c29996c9e47\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9ea4529c53ffc0a58096c29996c9e47\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\92c880fbc218b55cd979e16728918993\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\92c880fbc218b55cd979e16728918993\AndroidManifest.xml:25:5-29:19
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\3a4c08c53591ba9497d7eeb6691f03f1\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\3a4c08c53591ba9497d7eeb6691f03f1\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-location-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\d09e93c4b378d0b5e691de5696e6bf91\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-location-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\d09e93c4b378d0b5e691de5696e6bf91\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\7d761b971377e2931a9e615ba05a048f\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\7d761b971377e2931a9e615ba05a048f\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\36f44c4160bb2bf95d3b29c2e76569a8\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\36f44c4160bb2bf95d3b29c2e76569a8\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\25528a9f97928e88258c03e5ce0c840a\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\25528a9f97928e88258c03e5ce0c840a\AndroidManifest.xml:5:5-20
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1849a53dd9ff9c6fc519cef160024143\AndroidManifest.xml:24:5-28:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1849a53dd9ff9c6fc519cef160024143\AndroidManifest.xml:24:5-28:19
+ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:17:5-53:19
+MERGED from [com.android.support:design:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\a16c47d4b05c47a45ea67b0c7909308a\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\a16c47d4b05c47a45ea67b0c7909308a\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\301018d77a4ff9cbb99fc18317fb6b94\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\301018d77a4ff9cbb99fc18317fb6b94\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\5ba6b4e02413e15444622256232dd345\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\5ba6b4e02413e15444622256232dd345\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\0bba2f9536bead15a9f6deae66328db7\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\0bba2f9536bead15a9f6deae66328db7\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\8fb1dcb4e9cfe9b79c815f639d9453e4\AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\8fb1dcb4e9cfe9b79c815f639d9453e4\AndroidManifest.xml:22:5-37:19
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\6a3138a3f7d5de32d721353b21c0366b\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\6a3138a3f7d5de32d721353b21c0366b\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3834151a1a34a2bae257e7aff746a6c7\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3834151a1a34a2bae257e7aff746a6c7\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-location:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\cc3bb12cab08abb5f316e4cda7e9fb29\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\cc3bb12cab08abb5f316e4cda7e9fb29\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\f0fca987097615e52addbcb30fb54517\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\f0fca987097615e52addbcb30fb54517\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\34ee57de5e9324c30048e6078cfcca5c\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\34ee57de5e9324c30048e6078cfcca5c\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\b943d525686d13f471424d9cd23f0532\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\b943d525686d13f471424d9cd23f0532\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\bf185d671a6882aa782a8ac84fbc8ddf\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\bf185d671a6882aa782a8ac84fbc8ddf\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\cb7861db7ea4dc1c878964f618030200\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\cb7861db7ea4dc1c878964f618030200\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\780c031eec88679d25c0ee35b55f45c4\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\780c031eec88679d25c0ee35b55f45c4\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\8ae1161ce36df4652a79f1991cc8e1f7\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\8ae1161ce36df4652a79f1991cc8e1f7\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\c8bc1bd9b0ebbfd3378a90ca635bf2d5\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\c8bc1bd9b0ebbfd3378a90ca635bf2d5\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\134718ecbc8faae2a83acbca917afef6\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\134718ecbc8faae2a83acbca917afef6\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\0e87d4030ca38d3cb96aafee2a109097\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\0e87d4030ca38d3cb96aafee2a109097\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\5937a33bae2a33217d375510b911e36a\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\5937a33bae2a33217d375510b911e36a\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\f5ab2997bc547a6e43f1dc8d7d4417d0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\f5ab2997bc547a6e43f1dc8d7d4417d0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\0e7419dfccc7f8d4ba9e43275e93a76b\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\0e7419dfccc7f8d4ba9e43275e93a76b\AndroidManifest.xml:25:5-29:19
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\61a476151911850972567aaa3c96a4ff\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\61a476151911850972567aaa3c96a4ff\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\c133cb26c097ee453ffc73e8e5432c36\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\c133cb26c097ee453ffc73e8e5432c36\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\2df1057cbf55fcc3e4323e0d461d884b\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\2df1057cbf55fcc3e4323e0d461d884b\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\af69a92e875ed0e139f04bebe9e3fe24\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\af69a92e875ed0e139f04bebe9e3fe24\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\caab84e98c204e48806622b41628f10b\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\caab84e98c204e48806622b41628f10b\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\22a75157b5dfec605ca99784e9928a07\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\22a75157b5dfec605ca99784e9928a07\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\034bb67a1bffb746f4f4a9a6315815ff\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\034bb67a1bffb746f4f4a9a6315815ff\AndroidManifest.xml:5:5-20
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d34043f5ae629e0625940bf964d73b8b\AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d34043f5ae629e0625940bf964d73b8b\AndroidManifest.xml:24:5-28:19
 	android:supportsRtl
 		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:22:9-35
 	android:label
@@ -145,7 +162,7 @@ activity#ie.wit.darren.actio.SplashActivity
 ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:24:9-30:20
 	android:name
 		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:24:19-49
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
 ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:26:17-69
@@ -177,76 +194,94 @@ activity#ie.wit.darren.actio.TrackingCompleteActivity
 ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:42:9-43:15
 	android:name
 		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:42:19-59
+activity#ie.wit.darren.actio.UploadActivity
+ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:44:9-45:15
+	android:name
+		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:44:19-49
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:45:9-47:69
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\8fb5b0a9d8291115f1ce430aa9ea7205\AndroidManifest.xml:23:9-25:69
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\8fb5b0a9d8291115f1ce430aa9ea7205\AndroidManifest.xml:23:9-25:69
+ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:47:9-49:69
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\8ae1161ce36df4652a79f1991cc8e1f7\AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\8ae1161ce36df4652a79f1991cc8e1f7\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:47:13-66
+		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:49:13-66
 	android:name
-		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:46:13-58
+		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:48:13-58
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:48:9-50:71
+ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:50:9-52:71
 	android:value
-		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:50:13-68
+		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:52:13-68
 	android:name
-		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:49:13-58
+		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml:51:13-58
 uses-sdk
 INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:design:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\d804c2188ca0cec510b3bfcdc2f85aa8\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:design:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\d804c2188ca0cec510b3bfcdc2f85aa8\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e1262fbfee32df37fda7aff955daf814\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e1262fbfee32df37fda7aff955daf814\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\7d26b74898d178e4d91e0a2ec7fc7948\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\7d26b74898d178e4d91e0a2ec7fc7948\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\297377349e5dcd631598530b14a8e073\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\297377349e5dcd631598530b14a8e073\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-location:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\1e4fab334f8f61b2bad02a2b4527839f\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\1e4fab334f8f61b2bad02a2b4527839f\AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\a55de245b7a9a5a833c00691e95fe263\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\a55de245b7a9a5a833c00691e95fe263\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ccf68d3a10c6a1b954fff1c8843a1981\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ccf68d3a10c6a1b954fff1c8843a1981\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\d9557f367c9115aa9a6ab8942e03f2b8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\d9557f367c9115aa9a6ab8942e03f2b8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\c9453bccd708eebd03022d78a06de269\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\c9453bccd708eebd03022d78a06de269\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\7f40b6ed9b56348649f7da7388489ea7\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\7f40b6ed9b56348649f7da7388489ea7\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\213cd42ce002ab361818f969f45d0c3f\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\213cd42ce002ab361818f969f45d0c3f\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\8fb5b0a9d8291115f1ce430aa9ea7205\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\8fb5b0a9d8291115f1ce430aa9ea7205\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\b8ce68619ce5c608257ee63c6eb380d1\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\b8ce68619ce5c608257ee63c6eb380d1\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\755d6125f4f93df81eec2bce61ec06c9\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\755d6125f4f93df81eec2bce61ec06c9\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\d54b76b88913e93e71d44e7c3421d090\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\d54b76b88913e93e71d44e7c3421d090\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\0c3846403654499aaf8ff5060df62585\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\0c3846403654499aaf8ff5060df62585\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9ea4529c53ffc0a58096c29996c9e47\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9ea4529c53ffc0a58096c29996c9e47\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\92c880fbc218b55cd979e16728918993\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\92c880fbc218b55cd979e16728918993\AndroidManifest.xml:21:5-23:58
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\3a4c08c53591ba9497d7eeb6691f03f1\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\3a4c08c53591ba9497d7eeb6691f03f1\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-location-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\d09e93c4b378d0b5e691de5696e6bf91\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-location-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\d09e93c4b378d0b5e691de5696e6bf91\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\7d761b971377e2931a9e615ba05a048f\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\7d761b971377e2931a9e615ba05a048f\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\36f44c4160bb2bf95d3b29c2e76569a8\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\36f44c4160bb2bf95d3b29c2e76569a8\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\25528a9f97928e88258c03e5ce0c840a\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\25528a9f97928e88258c03e5ce0c840a\AndroidManifest.xml:4:5-43
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1849a53dd9ff9c6fc519cef160024143\AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1849a53dd9ff9c6fc519cef160024143\AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:design:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\a16c47d4b05c47a45ea67b0c7909308a\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\a16c47d4b05c47a45ea67b0c7909308a\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\301018d77a4ff9cbb99fc18317fb6b94\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\301018d77a4ff9cbb99fc18317fb6b94\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\5ba6b4e02413e15444622256232dd345\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\5ba6b4e02413e15444622256232dd345\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\0bba2f9536bead15a9f6deae66328db7\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\0bba2f9536bead15a9f6deae66328db7\AndroidManifest.xml:7:5-43
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\8fb1dcb4e9cfe9b79c815f639d9453e4\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\8fb1dcb4e9cfe9b79c815f639d9453e4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\6a3138a3f7d5de32d721353b21c0366b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\6a3138a3f7d5de32d721353b21c0366b\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3834151a1a34a2bae257e7aff746a6c7\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3834151a1a34a2bae257e7aff746a6c7\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\cc3bb12cab08abb5f316e4cda7e9fb29\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\cc3bb12cab08abb5f316e4cda7e9fb29\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\f0fca987097615e52addbcb30fb54517\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\f0fca987097615e52addbcb30fb54517\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\34ee57de5e9324c30048e6078cfcca5c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\34ee57de5e9324c30048e6078cfcca5c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\b943d525686d13f471424d9cd23f0532\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\b943d525686d13f471424d9cd23f0532\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\bf185d671a6882aa782a8ac84fbc8ddf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\bf185d671a6882aa782a8ac84fbc8ddf\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\2f83f3e5d93ec7db873439b14dffd6da\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\2f83f3e5d93ec7db873439b14dffd6da\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.8.0.aar\175ae46282c965ef1dd3521ca4e9cef3\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.8.0.aar\175ae46282c965ef1dd3521ca4e9cef3\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\cb7861db7ea4dc1c878964f618030200\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\cb7861db7ea4dc1c878964f618030200\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\780c031eec88679d25c0ee35b55f45c4\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\780c031eec88679d25c0ee35b55f45c4\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\8ae1161ce36df4652a79f1991cc8e1f7\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\8ae1161ce36df4652a79f1991cc8e1f7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\c8bc1bd9b0ebbfd3378a90ca635bf2d5\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\c8bc1bd9b0ebbfd3378a90ca635bf2d5\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\134718ecbc8faae2a83acbca917afef6\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\134718ecbc8faae2a83acbca917afef6\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\0e87d4030ca38d3cb96aafee2a109097\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\0e87d4030ca38d3cb96aafee2a109097\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\5937a33bae2a33217d375510b911e36a\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\5937a33bae2a33217d375510b911e36a\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\f5ab2997bc547a6e43f1dc8d7d4417d0\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\f5ab2997bc547a6e43f1dc8d7d4417d0\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\0e7419dfccc7f8d4ba9e43275e93a76b\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\0e7419dfccc7f8d4ba9e43275e93a76b\AndroidManifest.xml:21:5-23:58
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\61a476151911850972567aaa3c96a4ff\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\61a476151911850972567aaa3c96a4ff\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\c133cb26c097ee453ffc73e8e5432c36\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\c133cb26c097ee453ffc73e8e5432c36\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\2df1057cbf55fcc3e4323e0d461d884b\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\2df1057cbf55fcc3e4323e0d461d884b\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\af69a92e875ed0e139f04bebe9e3fe24\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\af69a92e875ed0e139f04bebe9e3fe24\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\caab84e98c204e48806622b41628f10b\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\caab84e98c204e48806622b41628f10b\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\22a75157b5dfec605ca99784e9928a07\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\22a75157b5dfec605ca99784e9928a07\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\034bb67a1bffb746f4f4a9a6315815ff\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\034bb67a1bffb746f4f4a9a6315815ff\AndroidManifest.xml:4:5-43
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d34043f5ae629e0625940bf964d73b8b\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d34043f5ae629e0625940bf964d73b8b\AndroidManifest.xml:20:5-22:41
 INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\d804c2188ca0cec510b3bfcdc2f85aa8\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\a16c47d4b05c47a45ea67b0c7909308a\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml
@@ -256,50 +291,70 @@ INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidMan
 		ADDED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Dazza\AndroidStudioProjects\Actio\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\d804c2188ca0cec510b3bfcdc2f85aa8\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e1262fbfee32df37fda7aff955daf814\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e1262fbfee32df37fda7aff955daf814\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\a55de245b7a9a5a833c00691e95fe263\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\a55de245b7a9a5a833c00691e95fe263\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ccf68d3a10c6a1b954fff1c8843a1981\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ccf68d3a10c6a1b954fff1c8843a1981\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\d9557f367c9115aa9a6ab8942e03f2b8\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\d9557f367c9115aa9a6ab8942e03f2b8\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:transition:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\c9453bccd708eebd03022d78a06de269\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:transition:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\c9453bccd708eebd03022d78a06de269\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\b8ce68619ce5c608257ee63c6eb380d1\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\b8ce68619ce5c608257ee63c6eb380d1\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\755d6125f4f93df81eec2bce61ec06c9\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\755d6125f4f93df81eec2bce61ec06c9\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\d54b76b88913e93e71d44e7c3421d090\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\d54b76b88913e93e71d44e7c3421d090\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\0c3846403654499aaf8ff5060df62585\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\0c3846403654499aaf8ff5060df62585\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9ea4529c53ffc0a58096c29996c9e47\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\e9ea4529c53ffc0a58096c29996c9e47\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\92c880fbc218b55cd979e16728918993\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\92c880fbc218b55cd979e16728918993\AndroidManifest.xml:26:9-28:38
+ADDED from [com.android.support:design:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\a16c47d4b05c47a45ea67b0c7909308a\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\301018d77a4ff9cbb99fc18317fb6b94\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\301018d77a4ff9cbb99fc18317fb6b94\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\6a3138a3f7d5de32d721353b21c0366b\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\6a3138a3f7d5de32d721353b21c0366b\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\f0fca987097615e52addbcb30fb54517\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\f0fca987097615e52addbcb30fb54517\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\34ee57de5e9324c30048e6078cfcca5c\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\34ee57de5e9324c30048e6078cfcca5c\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\b943d525686d13f471424d9cd23f0532\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\b943d525686d13f471424d9cd23f0532\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\bf185d671a6882aa782a8ac84fbc8ddf\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\bf185d671a6882aa782a8ac84fbc8ddf\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\c8bc1bd9b0ebbfd3378a90ca635bf2d5\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\c8bc1bd9b0ebbfd3378a90ca635bf2d5\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\134718ecbc8faae2a83acbca917afef6\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\134718ecbc8faae2a83acbca917afef6\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\0e87d4030ca38d3cb96aafee2a109097\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\0e87d4030ca38d3cb96aafee2a109097\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\5937a33bae2a33217d375510b911e36a\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\5937a33bae2a33217d375510b911e36a\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\f5ab2997bc547a6e43f1dc8d7d4417d0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\f5ab2997bc547a6e43f1dc8d7d4417d0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\0e7419dfccc7f8d4ba9e43275e93a76b\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\0e7419dfccc7f8d4ba9e43275e93a76b\AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:design:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\d804c2188ca0cec510b3bfcdc2f85aa8\AndroidManifest.xml:28:13-35
+		ADDED from [com.android.support:design:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\a16c47d4b05c47a45ea67b0c7909308a\AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:design:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\d804c2188ca0cec510b3bfcdc2f85aa8\AndroidManifest.xml:27:13-51
-uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\297377349e5dcd631598530b14a8e073\AndroidManifest.xml:26:5-28:35
-	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\297377349e5dcd631598530b14a8e073\AndroidManifest.xml:27:9-41
-	android:required
-		ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\297377349e5dcd631598530b14a8e073\AndroidManifest.xml:28:9-32
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\7f40b6ed9b56348649f7da7388489ea7\AndroidManifest.xml:23:9-26:75
+		ADDED from [com.android.support:design:26.1.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\a16c47d4b05c47a45ea67b0c7909308a\AndroidManifest.xml:27:13-51
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\8fb1dcb4e9cfe9b79c815f639d9453e4\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\8fb1dcb4e9cfe9b79c815f639d9453e4\AndroidManifest.xml:25:13-46
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\7f40b6ed9b56348649f7da7388489ea7\AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\8fb1dcb4e9cfe9b79c815f639d9453e4\AndroidManifest.xml:26:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\7f40b6ed9b56348649f7da7388489ea7\AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\8fb1dcb4e9cfe9b79c815f639d9453e4\AndroidManifest.xml:27:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\7f40b6ed9b56348649f7da7388489ea7\AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\8fb1dcb4e9cfe9b79c815f639d9453e4\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\8fb1dcb4e9cfe9b79c815f639d9453e4\AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\8fb1dcb4e9cfe9b79c815f639d9453e4\AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\8fb1dcb4e9cfe9b79c815f639d9453e4\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\8fb1dcb4e9cfe9b79c815f639d9453e4\AndroidManifest.xml:34:13-89
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3834151a1a34a2bae257e7aff746a6c7\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3834151a1a34a2bae257e7aff746a6c7\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\3834151a1a34a2bae257e7aff746a6c7\AndroidManifest.xml:28:9-32
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\cb7861db7ea4dc1c878964f618030200\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\cb7861db7ea4dc1c878964f618030200\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\cb7861db7ea4dc1c878964f618030200\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\cb7861db7ea4dc1c878964f618030200\AndroidManifest.xml:24:13-79
 meta-data#android.arch.lifecycle.VERSION
-ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1849a53dd9ff9c6fc519cef160024143\AndroidManifest.xml:25:9-27:47
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d34043f5ae629e0625940bf964d73b8b\AndroidManifest.xml:25:9-27:47
 	android:value
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1849a53dd9ff9c6fc519cef160024143\AndroidManifest.xml:27:13-44
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d34043f5ae629e0625940bf964d73b8b\AndroidManifest.xml:27:13-44
 	android:name
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1849a53dd9ff9c6fc519cef160024143\AndroidManifest.xml:26:13-58
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Dazza\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d34043f5ae629e0625940bf964d73b8b\AndroidManifest.xml:26:13-58

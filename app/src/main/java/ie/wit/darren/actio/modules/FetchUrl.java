@@ -20,6 +20,7 @@ import java.net.URL;
 public class FetchUrl extends AsyncTask<String, Void, String> {
 
     private Context context;
+    private int count = 0;
 
     public FetchUrl(Context context) { this.context = context; }
 
@@ -47,9 +48,9 @@ public class FetchUrl extends AsyncTask<String, Void, String> {
         // Invokes the thread for parsing the JSON data
 
         if(result.equalsIgnoreCase("Exception Caught")){
-            Toast.makeText(context, "Routes not currently available, please check your data connection and try again", Toast.LENGTH_SHORT).show();
+            Log.d("Routing not available", result);
         }else{
-            parserTask.execute(result);
+                parserTask.execute(result);
         }
     }
 

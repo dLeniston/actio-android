@@ -12,6 +12,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -31,6 +32,10 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,47 +46,51 @@ import java.util.List;
 
 public class TrackerActivity extends AppCompatActivity implements OnMapReadyCallback, LocationListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
-    private TextView travelled;
-    private GoogleApiClient mGoogleApiClient;
-    private LocationRequest mLocationRequest;
-    private Location mLastLocation;
+    //Vars
+    int Seconds, Minutes, MilliSeconds;
+    long MillisecondTime, StartTime, TimeBuff, UpdateTime = 0L;
     private double totalMeters = 0;
     public String totalTime;
     public String activity;
-    private Polyline polyline;
-    //List<LatLng> snappedPoints = new ArrayList<>();
-    final List<LatLng> polylinePoints = new ArrayList<>();
-    public static GoogleMap mMap;
 
+    //Service vars
+    private GoogleApiClient mGoogleApiClient;
+    private LocationRequest mLocationRequest;
+    private Location mLastLocation;
+    public /*static*/ GoogleMap trackerMap;
+
+    //Widgets
+    private TextView travelled;
     TextView textView;
     FloatingActionButton pauseButton;
     ImageView icon;
     Boolean clicked = false;
+    JSONObject polyLinesObject = new JSONObject();
+    JSONArray points = new JSONArray();
 
-    long MillisecondTime, StartTime, TimeBuff, UpdateTime = 0L;
-
+    //Lists and other vars
+    Polyline polyline;
+    final List<LatLng> polylinePoints = new ArrayList<>();
     Handler handler;
 
-    int Seconds, Minutes, MilliSeconds;
-
-    public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
+    public void onMapReady(GoogleMap googleMap){
+        trackerMap = googleMap;
         //Initialize Google Play Services
-        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
             if (ContextCompat.checkSelfPermission(this,
                     android.Manifest.permission.ACCESS_FINE_LOCATION)
                     == PackageManager.PERMISSION_GRANTED) {
-                mMap.setMyLocationEnabled(true);
+                trackerMap.setMyLocationEnabled(true);
             }
         }
         else {
-            mMap.setMyLocationEnabled(true);
+            trackerMap.setMyLocationEnabled(true);
         }
     }
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tracker);
         icon = (ImageView) findViewById(R.id.tracking_icon);
@@ -105,7 +114,6 @@ public class TrackerActivity extends AppCompatActivity implements OnMapReadyCall
                 .findFragmentById(R.id.tracker_map);
         mapFragment.getMapAsync(this);
 
-
         StartTime = SystemClock.uptimeMillis();
 
         finishButton.setOnClickListener(new View.OnClickListener(){
@@ -116,6 +124,7 @@ public class TrackerActivity extends AppCompatActivity implements OnMapReadyCall
                 intent.putExtra("time", totalTime);
                 intent.putExtra("distance", s);
                 intent.putExtra("type", activity);
+                intent.putExtra("points", polylinePoints.toString());
                 stopClock();
                 clicked = false; //Set clicked to false so user won't have to press start button twice
                 startActivity(intent);
@@ -161,16 +170,13 @@ public class TrackerActivity extends AppCompatActivity implements OnMapReadyCall
             Seconds = Seconds % 60;
             MilliSeconds = (int) (UpdateTime % 1000);
             totalTime = "" + Minutes + ":" + String.format("%02d", Seconds) + ":" + String.format("%03d", MilliSeconds);
-            /*textView.setText("" + Minutes + ":"
-                    + String.format("%02d", Seconds) + ":"
-                    + String.format("%03d", MilliSeconds));*/
             textView.setText(totalTime);
             handler.postDelayed(this, 0);
         }
 
     };
 
-    protected synchronized void buildGoogleApiClient() {
+    protected synchronized void buildGoogleApiClient(){
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
                 .addOnConnectionFailedListener(this)
@@ -181,33 +187,38 @@ public class TrackerActivity extends AppCompatActivity implements OnMapReadyCall
     }
 
     @Override
-    public void onLocationChanged(Location location) {
+    public void onLocationChanged(Location location){
         LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
-        moveCamera(mMap, latLng, 15);
-        polylinePoints.add(new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude()));
-        polyline = mMap.addPolyline(new PolylineOptions()
+        moveCamera(trackerMap, latLng, 15);
+        //polylinePoints.add(new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude()));
+        polylinePoints.add(new LatLng(location.getLatitude(),location.getLongitude()));
+        polyline = trackerMap.addPolyline(new PolylineOptions()
                 .addAll(polylinePoints)
-                .color(Color.BLUE)
-                .width(20));
+                .color(Color.RED)
+                .width(10));
         double distance = mLastLocation.distanceTo(location);
         mLastLocation = location;
         totalMeters += distance;
         if(distance < 4 && totalMeters != 0){
             return;
         }else {
-
             travelled.setText(convertDistance(totalMeters));
+        }
+
+        if (mGoogleApiClient != null){
+            LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
         }
     }
 
-    private void moveCamera(GoogleMap map, LatLng latLng, float zoom){
+    private void moveCamera(GoogleMap map, LatLng latLng, float zoom){ //Move to helper class & import
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoom));
     }
 
     @Override
-    public void onConnected(Bundle bundle) {
+    public void onConnected(Bundle bundle){
         mLocationRequest = LocationRequest.create();
         mLocationRequest.setInterval(5000);
+        mLocationRequest.setFastestInterval(3000);
         mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
         if (ContextCompat.checkSelfPermission(this,
                 android.Manifest.permission.ACCESS_FINE_LOCATION)
@@ -218,7 +229,7 @@ public class TrackerActivity extends AppCompatActivity implements OnMapReadyCall
     }
 
     @Override
-    protected void onPause() {
+    protected void onPause(){
         handler.removeCallbacks(runnable);
         super.onPause();
     }
@@ -241,12 +252,12 @@ public class TrackerActivity extends AppCompatActivity implements OnMapReadyCall
     }
 
     @Override
-    public void onConnectionSuspended(int i) {
+    public void onConnectionSuspended(int i){
 
     }
 
     @Override
-    public void onConnectionFailed(ConnectionResult connectionResult) {
+    public void onConnectionFailed(ConnectionResult connectionResult){
         Toast.makeText(this, connectionResult.getErrorMessage(), Toast.LENGTH_SHORT).show();
     }
 }

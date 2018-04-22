@@ -59,15 +59,13 @@ public class DataParser {
             e.printStackTrace();
         }catch (Exception e){
         }
-
-
         return routes;
     }
 
 
     /**
      * Method to decode polyline points
-     * Courtesy : http://jeffreysambells.com/2010/05/27/decoding-polylines-from-google-maps-direction-api-with-java
+     * Source : http://jeffreysambells.com/2010/05/27/decoding-polylines-from-google-maps-direction-api-with-java
      * */
     private List<LatLng> decodePoly(String encoded) {
 
@@ -99,7 +97,6 @@ public class DataParser {
                     (((double) lng / 1E5)));
             poly.add(p);
         }
-
         return poly;
     }
 }

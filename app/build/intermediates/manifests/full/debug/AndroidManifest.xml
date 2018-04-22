@@ -9,9 +9,9 @@
         android:targetSdkVersion="26" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <permission
         android:name="ie.wit.darren.actio.permission.MAPS_RECEIVE"
@@ -47,16 +47,31 @@
         <activity android:name="ie.wit.darren.actio.TrackerActivity" />
         <activity android:name="ie.wit.darren.actio.EventMapActivity" />
         <activity android:name="ie.wit.darren.actio.TrackingCompleteActivity" />
+        <activity android:name="ie.wit.darren.actio.UploadActivity" />
 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBZx5m1Au5PqcY9gFE_fxIXWhQdgQI2dAs" />
+            android:value="AIzaSyAFYnsD1ZpgaJMv9CMHgyLzrqFgT3Hu02M" />
         <meta-data
             android:name="android.support.VERSION"
             android:value="26.1.0" />
+
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+            Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
 
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"

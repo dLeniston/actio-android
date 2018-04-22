@@ -6,17 +6,18 @@ package ie.wit.darren.actio.modules;
 
 public class Event {
 
-    private String event, address, lat, lon;
+    private String event, address, date, time, lat, lon;
 
     public Event() {
     }
 
-    public Event(String event, String address, String lat, String lon) {
+    public Event(String event, String address, String date, String time, String lat, String lon) {
         this.event = event;
         this.address = address;
+        this.date = date;
+        this.time = time;
         this.lat = lat;
         this.lon = lon;
-       //this.year = year;
     }
 
     public String getEvent() {
@@ -27,13 +28,21 @@ public class Event {
         this.event = event;
     }
 
-    /*public String getYear() {
-        return year;
+    public String getDate(){
+        return date;
     }
 
-    public void setYear(String year) {
-        this.year = year;
-    }*/
+    public void setDate(String date){
+        this.date = date;
+    }
+
+    public String getTime(){
+        return time;
+    }
+
+    public void setTime(String time){
+        this.time = time;
+    }
 
     public String getAddress() {
         return address;

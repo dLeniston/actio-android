@@ -17,7 +17,6 @@ import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
@@ -41,33 +40,37 @@ public class EventMapActivity extends AppCompatActivity implements OnMapReadyCal
         GoogleApiClient.OnConnectionFailedListener,
         LocationListener {
 
+    //Vars
     private static final String TAG = "EventMap";
-
     private static final String FINE_LOCATION = android.Manifest.permission.ACCESS_FINE_LOCATION;
     private static final String COURSE_LOCATION = android.Manifest.permission.ACCESS_COARSE_LOCATION;
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1234;
-    private static final float DEFAULT_ZOOM = 15f;
-
-    //vars
-    private Boolean mLocationPermissionsGranted = false;
-    public static GoogleMap map;
-    private FusedLocationProviderClient mFusedLocationProviderClient;
-    double originLat = 0.0;
-    double originLng = 0.0;
+    private Boolean mLocationPermissionsGranted = true;
+    public static GoogleMap eventMap;
     double lat = 0.0;
     double lng = 0.0;
     private double totalMeters = 0;
+    private String event;
+    private LatLng origin;
+    private LatLng destination;
+    //private FetchUrl fetchUrl = new FetchUrl(EventMapActivity.this);
+
+    //Service vars
     ArrayList<LatLng> MarkerPoints;
-    GoogleApiClient mGoogleApiClient;
+    private GoogleApiClient mGoogleApiClient;
     private Location mLastLocation;
-    Location destination;
     Marker mCurrLocationMarker;
-    LocationRequest mLocationRequest;
+    LatLng latLng;
+    private LocationRequest mLocationRequest;
+    MarkerOptions markerOptionsDest = new MarkerOptions();
+    MarkerOptions markerOptionsOrigin = new MarkerOptions();
+
+    //Widgets
     private TextView distanceLeft;
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        map = googleMap;
+        eventMap = googleMap;
 
         //Initialize Google Play Services
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -75,46 +78,13 @@ public class EventMapActivity extends AppCompatActivity implements OnMapReadyCal
                     android.Manifest.permission.ACCESS_FINE_LOCATION)
                     == PackageManager.PERMISSION_GRANTED) {
                 buildGoogleApiClient();
-                map.setMyLocationEnabled(true);
+                eventMap.setMyLocationEnabled(true);
             }
         }
         else {
             buildGoogleApiClient();
-            map.setMyLocationEnabled(true);
+            eventMap.setMyLocationEnabled(true);
         }
-
-                /*LatLng o = new LatLng(originLat, originLng);
-                LatLng d = new LatLng(lat, lng);
-
-                // Adding new item to the ArrayList
-                MarkerPoints.add(o);
-                MarkerPoints.add(d);
-
-                // Creating MarkerOptions
-                MarkerOptions options = new MarkerOptions();
-
-                // Setting the position of the marker
-                options.position(o);
-                options.position(d);
-                options.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
-
-                // Add new marker to the Google Map Android API V2
-                map.addMarker(options);
-
-                // Checks, whether start and end locations are captured
-                if (MarkerPoints.size() >= 2) {
-                    LatLng origin = MarkerPoints.get(0);
-                    LatLng dest = MarkerPoints.get(1);
-                    // Getting URL to the Google Directions API
-                    String url = getUrl(origin, dest);
-                    Log.d("onMapClick", url.toString());
-                    FetchUrl FetchUrl = new FetchUrl();
-                    // Start downloading json data from Google Directions API
-                    FetchUrl.execute(url);
-                    //move map camera
-                    map.moveCamera(CameraUpdateFactory.newLatLng(origin));
-                    map.animateCamera(CameraUpdateFactory.zoomTo(11));
-                }*/
     }
 
     @Override
@@ -128,7 +98,7 @@ public class EventMapActivity extends AppCompatActivity implements OnMapReadyCal
         getSupportActionBar().setTitle("Route Map");
         Intent intent = getIntent();
 
-        String event = intent.getStringExtra("event");
+        event = intent.getStringExtra("event");
         String address = intent.getStringExtra("address");
         TextView routeDetails = (TextView) findViewById(R.id.route_details);
         String details = "Route to: " + event + "\n" + "at: " + address;
@@ -146,11 +116,6 @@ public class EventMapActivity extends AppCompatActivity implements OnMapReadyCal
         MarkerPoints = new ArrayList<>();
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         initMap();
-    }
-
-    private void moveCamera(LatLng latLng, float zoom){
-        Log.d(TAG, "moveCamera: moving the camera to: lat: " + latLng.latitude + ", lng: " + latLng.longitude );
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoom));
     }
 
     private void initMap(){
@@ -235,9 +200,9 @@ public class EventMapActivity extends AppCompatActivity implements OnMapReadyCal
     @Override
     public void onConnected(Bundle bundle) {
         mLocationRequest = LocationRequest.create();
-        mLocationRequest.setInterval(1000);
+        mLocationRequest.setInterval(5000);
         mLocationRequest.setFastestInterval(1000);
-        mLocationRequest.setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY);
+        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
         if (ContextCompat.checkSelfPermission(this,
                 android.Manifest.permission.ACCESS_FINE_LOCATION)
                 == PackageManager.PERMISSION_GRANTED) {
@@ -250,60 +215,52 @@ public class EventMapActivity extends AppCompatActivity implements OnMapReadyCal
     public void onConnectionSuspended(int i) {
     }
 
+
     @Override
     public void onLocationChanged(Location location) {
+        //Place current location marker
         mLastLocation = location;
         if (mCurrLocationMarker != null) {
             mCurrLocationMarker.remove();
         }
-        //Place current location marker
-        LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
-        MarkerOptions markerOptions = new MarkerOptions();
-        markerOptions.position(latLng);
-        markerOptions.title("Destination");
-        //mCurrLocationMarker = map.addMarker(markerOptions);
-        //move map camera
-        map.moveCamera(CameraUpdateFactory.newLatLng(latLng));
-        map.animateCamera(CameraUpdateFactory.zoomTo(11));
-        //Stuff
-        LatLng o = new LatLng(location.getLatitude(), location.getLongitude());
-        LatLng d = new LatLng(lat, lng);
+
+        latLng = new LatLng(location.getLatitude(), location.getLongitude());
+        moveCamera(eventMap, latLng, 15f);
+
+        //Get origin and destination
+        origin = latLng;
+        destination = new LatLng(lat, lng);
+
         float distance = getDistance(location.getLatitude(), location.getLongitude(), lat, lng);
-        distanceLeft.setText(String.format("%.2f", (distance/1000)) + "Km");
+        distanceLeft.setText(String.format("%.2f", (distance / 1000)) + "Km");
 
-        // Adding new item to the ArrayList
-        MarkerPoints.add(o);
-        MarkerPoints.add(d);
-
-        // Creating MarkerOptions
-        //MarkerOptions options = new MarkerOptions();
-        // Setting the position of the marker
-        markerOptions.position(o);
-        markerOptions.position(d);
-        markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
-
-        // Add new marker to the Google Map Android API V2
-        map.addMarker(markerOptions);
+        markerSetup(origin, destination);
 
         // Checks, whether start and end locations are captured
-        if (MarkerPoints.size() >= 2) {
-            LatLng origin = MarkerPoints.get(0);
-            LatLng dest = MarkerPoints.get(1);
-            // Getting URL to the Google Directions API
-            String url = getUrl(origin, dest);
-            //Log.d("onMapClick", url.toString());
-            FetchUrl FetchUrl = new FetchUrl(getApplicationContext());
-            // Start downloading json data from Google Directions API
-            FetchUrl.execute(url);
+        LatLng o = MarkerPoints.get(0);
+        LatLng d = MarkerPoints.get(1);
+        getDirections(o, d);
+    }
 
-            //move map camera
-            map.moveCamera(CameraUpdateFactory.newLatLng(origin));
-            map.animateCamera(CameraUpdateFactory.zoomTo(11));
-        }
-        //stop location updates
-        if (mGoogleApiClient != null) {
-            LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
-        }
+    private void markerSetup(LatLng o, LatLng d){
+        //Add new marker to the Map
+        MarkerPoints.clear();
+        MarkerPoints.add(o);
+        MarkerPoints.add(d);
+        markerOptionsDest.position(d).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
+        markerOptionsDest.title(event + " - Start");
+        eventMap.addMarker(markerOptionsDest);
+    }
+
+    private void getDirections(LatLng o, LatLng d){
+        // Start downloading json data from Google Directions API
+        String url = getUrl(o, d);
+        FetchUrl fetchUrl = new FetchUrl(getApplicationContext());
+        fetchUrl.execute(url);
+    }
+
+    private void moveCamera(GoogleMap map, LatLng latLng, float zoom){
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoom));
     }
 
     private float getDistance(double lat1,double lon1,double lat2,double lon2) {
